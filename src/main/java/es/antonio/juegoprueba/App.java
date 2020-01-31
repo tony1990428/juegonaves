@@ -13,12 +13,26 @@ import javafx.stage.Stage;
 public class App extends Application {
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) {        
+        Pane root = new Pane();
+        // Crear y mostrar el escenario
+        Scene scene = new Scene(root, 300, 250);
+        primaryStage.setTitle("juegoprueba");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        
+        
+        Rectangle rectangleCuerpo1 = new Rectangle(0, 0, 48, 60);
+        root.getChildren().add(rectangleCuerpo1);
+        Rectangle rectangleCuerpo2 = new Rectangle(3, 20, 48, 60);
+        root.getChildren().add(rectangleCuerpo2);
+        
+        
         // Elementos del personaje
         Rectangle rectangleCuerpo = new Rectangle(0, 0, 48, 60);
         Rectangle rectanglePierna1 = new Rectangle(1, 50, 10, 20);
         Rectangle rectanglePierna2 = new Rectangle(37, 50, 10, 20);
-        Circle circleOjo = new Circle(32, 22, 5);
+        Circle circleOjo = new Circle(32, 22,5);
         Rectangle rectanglePanuelo = new Rectangle(-1, 7, 50, 13);
         Polygon polygonPico1 = new Polygon(new double[]{
             0.0, 15.0,
@@ -49,18 +63,13 @@ public class App extends Application {
         groupPerson.getChildren().add(polygonPico2);
         
         // Posicionar el grupo en la pantalla
-        groupPerson.setLayoutX(50);
-        groupPerson.setLayoutY(50);
+        groupPerson.setLayoutX(150);
+        groupPerson.setLayoutY(150);
         
         // Añadir el grupo al contenedor principal
-        Pane root = new Pane();
         root.getChildren().add(groupPerson);
+      
         
-        // Crear y mostrar el escenario
-        Scene scene = new Scene(root, 300, 250);
-        primaryStage.setTitle("juegoprueba");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
     public static void main(String[] args) {
