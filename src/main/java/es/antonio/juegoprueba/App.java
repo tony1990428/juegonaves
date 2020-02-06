@@ -24,9 +24,10 @@ public class App extends Application {
         
         Rectangle rectangleCuerpo1 = new Rectangle(0, 0, 48, 60);
         root.getChildren().add(rectangleCuerpo1);
-        Rectangle rectangleCuerpo2 = new Rectangle(3, 20, 48, 60);
+        Rectangle rectangleCuerpo2 = new Rectangle(40, 20, 48, 60);
         root.getChildren().add(rectangleCuerpo2);
-        
+        rectangleCuerpo2.setFill(Color.RED);
+        root.getChildren().add(rectangleCuerpo2);
         
         // Elementos del personaje
         Rectangle rectangleCuerpo = new Rectangle(0, 0, 48, 60);
