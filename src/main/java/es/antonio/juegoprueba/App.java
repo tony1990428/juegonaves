@@ -21,13 +21,26 @@ public class App extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
         
-        
+        Group groupNave = new Group();
+        // Añadir cada elemento al grupo en vez del panel root
         Rectangle rectangleCuerpo1 = new Rectangle(0, 0, 48, 60);
         root.getChildren().add(rectangleCuerpo1);
-        Rectangle rectangleCuerpo2 = new Rectangle(40, 20, 48, 60);
+        Rectangle rectangleCuerpo2 = new Rectangle(40, 50, 48, 60);
         root.getChildren().add(rectangleCuerpo2);
         rectangleCuerpo2.setFill(Color.RED);
-        root.getChildren().add(rectangleCuerpo2);
+        
+        Circle circle1 = new Circle();
+        root.getChildren().add(circle1);
+        circle1.setCenterX(100.0f);
+        root.getChildren().add(circle1);
+        circle1.setCenterY(100.0f);
+        root.getChildren().add(circle);
+        circle1.setRadius(50.0f);
+        root.getChildren().add(circle1);
+        
+        // Añadir el group al root
+        
+        
         
         // Elementos del personaje
         Rectangle rectangleCuerpo = new Rectangle(0, 0, 48, 60);
