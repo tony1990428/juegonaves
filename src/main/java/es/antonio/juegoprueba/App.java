@@ -31,11 +31,12 @@ public class App extends Application {
         
         Circle circle1 = new Circle();
         root.getChildren().add(circle1);
+        
         circle1.setCenterX(100.0f);
-        root.getChildren().add(circle1);
         circle1.setCenterY(100.0f);
-        root.getChildren().add(circle);
         circle1.setRadius(50.0f);
+        
+        // Añadir el circulo a la pantalla
         root.getChildren().add(circle1);
         
         // Añadir el group al root
@@ -43,7 +44,7 @@ public class App extends Application {
         
         
         // Elementos del personaje
-        Rectangle rectangleCuerpo = new Rectangle(0, 0, 48, 60);
+        Rectangle rectangleCuerpo = new  Rectangle(0, 0, 48, 60);
         Rectangle rectanglePierna1 = new Rectangle(1, 50, 10, 20);
         Rectangle rectanglePierna2 = new Rectangle(37, 50, 10, 20);
         Circle circleOjo = new Circle(32, 22,5);
