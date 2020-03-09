@@ -34,10 +34,9 @@ public class App extends Application {
         
         circle1.setCenterX(100.0f);
         circle1.setCenterY(100.0f);
-        circle1.setRadius(50.0f);
+        circle1.setRadius(30.0f);
         
         // Añadir el circulo a la pantalla
-        root.getChildren().add(circle1);
         
         // Añadir el group al root
         
